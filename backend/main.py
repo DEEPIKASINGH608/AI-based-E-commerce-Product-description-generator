@@ -6,11 +6,9 @@ import torch
 
 app = FastAPI(title="Advanced AI Copywriting Engine")
 
-# --- CROSS-ORIGIN RESOURCE SHARING (CORS) LAYER ---
-# This permits your Streamlit frontend browser window to securely query the API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins, or narrow it down to ["http://localhost:8501"]
+    allow_origins=["*"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

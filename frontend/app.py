@@ -8,7 +8,6 @@ st.write("Construct market-ready listings utilizing localized open-source model 
 
 st.markdown("---")
 
-# Organized Multi-Column Layout Architecture
 with st.sidebar:
     st.header("Model Tuning Parameters")
     creativity = st.slider("Creativity Level (Temperature)", min_value=0.1, max_value=1.0, value=0.7, step=0.1)
@@ -54,7 +53,6 @@ with col2:
                     if api_call.status_code == 200:
                         data_payload = api_call.json()
 
-                        # Organized Tab Display Layout
                         tab1, tab2, tab3 = st.tabs(["📝 Complete Copy Draft", " Core Bullet Highlights", "💾 Export Data"])
 
                         with tab1:
